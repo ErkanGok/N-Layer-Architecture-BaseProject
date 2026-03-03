@@ -1,0 +1,14 @@
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DtoLayer\bin\Debug\net8.0\DtoLayer.deps.json
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DtoLayer\bin\Debug\net8.0\DtoLayer.runtimeconfig.json
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DtoLayer\bin\Debug\net8.0\DtoLayer.dll
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DtoLayer\bin\Debug\net8.0\DtoLayer.pdb
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DtoLayer\obj\Debug\net8.0\DtoLayer.csproj.AssemblyReference.cache
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DtoLayer\obj\Debug\net8.0\DtoLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DtoLayer\obj\Debug\net8.0\DtoLayer.AssemblyInfoInputs.cache
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DtoLayer\obj\Debug\net8.0\DtoLayer.AssemblyInfo.cs
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DtoLayer\obj\Debug\net8.0\DtoLayer.csproj.CoreCompileInputs.cache
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DtoLayer\obj\Debug\net8.0\DtoLayer.dll
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DtoLayer\obj\Debug\net8.0\refint\DtoLayer.dll
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DtoLayer\obj\Debug\net8.0\DtoLayer.pdb
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DtoLayer\obj\Debug\net8.0\DtoLayer.genruntimeconfig.cache
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DtoLayer\obj\Debug\net8.0\ref\DtoLayer.dll
