@@ -2,6 +2,7 @@
 using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using DataAccessLayer.Repositories;
+using DataAccessLayer.UnitofWorks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -23,6 +24,7 @@ namespace DataAccessLayer.Extensions
 			});
 			services.AddScoped<IProductDal, EfProductDal>();			
 			services.AddScoped<IProductCategoryDal, EfProductCategoryDal>();			
+			services.AddScoped<IUnitofWork, UnitofWork>();			
 			services.AddScoped(typeof(IGenericDal<>), typeof(GenericRepository<>));
 			return services;
 		}

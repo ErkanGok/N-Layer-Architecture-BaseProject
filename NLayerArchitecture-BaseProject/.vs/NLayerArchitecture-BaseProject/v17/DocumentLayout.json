@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E857CD9-9010-4DFC-9277-6E920D2BC57E}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\erkan\\documents\\github\\n-layer-architecture-baseproject\\nlayerarchitecture-baseproject\\dataaccesslayer\\concrete\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E857CD9-9010-4DFC-9277-6E920D2BC57E}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\concrete\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D2F377B5-B4A5-436D-96C3-521F645C980D}|WebApi2\\WebApi.csproj|c:\\users\\erkan\\documents\\github\\n-layer-architecture-baseproject\\nlayerarchitecture-baseproject\\webapi2\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2F377B5-B4A5-436D-96C3-521F645C980D}|WebApi2\\WebApi.csproj|solutionrelative:webapi2\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{408EBE74-DF10-40DC-ABE8-F37917781450}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\erkan\\documents\\github\\n-layer-architecture-baseproject\\nlayerarchitecture-baseproject\\businesslayer\\concrete\\productcategorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{408EBE74-DF10-40DC-ABE8-F37917781450}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\concrete\\productcategorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{408EBE74-DF10-40DC-ABE8-F37917781450}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\erkan\\documents\\github\\n-layer-architecture-baseproject\\nlayerarchitecture-baseproject\\businesslayer\\concrete\\productmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{408EBE74-DF10-40DC-ABE8-F37917781450}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\concrete\\productmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E857CD9-9010-4DFC-9277-6E920D2BC57E}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\erkan\\documents\\github\\n-layer-architecture-baseproject\\nlayerarchitecture-baseproject\\dataaccesslayer\\unitofworks\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E857CD9-9010-4DFC-9277-6E920D2BC57E}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\unitofworks\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3E857CD9-9010-4DFC-9277-6E920D2BC57E}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\erkan\\documents\\github\\n-layer-architecture-baseproject\\nlayerarchitecture-baseproject\\dataaccesslayer\\extensions\\repositoryextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E857CD9-9010-4DFC-9277-6E920D2BC57E}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\extensions\\repositoryextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2F377B5-B4A5-436D-96C3-521F645C980D}|WebApi2\\WebApi.csproj|c:\\users\\erkan\\documents\\github\\n-layer-architecture-baseproject\\nlayerarchitecture-baseproject\\webapi2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2F377B5-B4A5-436D-96C3-521F645C980D}|WebApi2\\WebApi.csproj|solutionrelative:webapi2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2F377B5-B4A5-436D-96C3-521F645C980D}|WebApi2\\WebApi.csproj|c:\\users\\erkan\\documents\\github\\n-layer-architecture-baseproject\\nlayerarchitecture-baseproject\\webapi2\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D2F377B5-B4A5-436D-96C3-521F645C980D}|WebApi2\\WebApi.csproj|solutionrelative:webapi2\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{408EBE74-DF10-40DC-ABE8-F37917781450}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\erkan\\documents\\github\\n-layer-architecture-baseproject\\nlayerarchitecture-baseproject\\businesslayer\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{408EBE74-DF10-40DC-ABE8-F37917781450}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3E857CD9-9010-4DFC-9277-6E920D2BC57E}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\erkan\\documents\\github\\n-layer-architecture-baseproject\\nlayerarchitecture-baseproject\\dataaccesslayer\\unitofworks\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E857CD9-9010-4DFC-9277-6E920D2BC57E}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\unitofworks\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,66 +39,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Context.cs",
-              "DocumentMoniker": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\DataAccessLayer\\Concrete\\Context.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Concrete\\Context.cs",
-              "ToolTip": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\DataAccessLayer\\Concrete\\Context.cs",
-              "RelativeToolTip": "DataAccessLayer\\Concrete\\Context.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABIAAABRAAAAAAAAAA==",
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\WebApi2\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "WebApi2\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\WebApi2\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "WebApi2\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-06T07:56:29.347Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\WebApi2\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "WebApi2\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\WebApi2\\appsettings.Development.json",
-              "RelativeToolTip": "WebApi2\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-06T07:55:22.048Z",
+              "WhenOpened": "2026-03-06T08:43:41.154Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RepositoryExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\DataAccessLayer\\Extensions\\RepositoryExtensions.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Extensions\\RepositoryExtensions.cs",
-              "ToolTip": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\DataAccessLayer\\Extensions\\RepositoryExtensions.cs",
-              "RelativeToolTip": "DataAccessLayer\\Extensions\\RepositoryExtensions.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAADAAAAAAAAAA==",
+              "Title": "ProductCategoryManager.cs",
+              "DocumentMoniker": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\Concrete\\ProductCategoryManager.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Concrete\\ProductCategoryManager.cs",
+              "ToolTip": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\Concrete\\ProductCategoryManager.cs",
+              "RelativeToolTip": "BusinessLayer\\Concrete\\ProductCategoryManager.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAowCkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-06T07:54:54.171Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ServiceExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\Extensions\\ServiceExtensions.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Extensions\\ServiceExtensions.cs",
-              "ToolTip": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\Extensions\\ServiceExtensions.cs",
-              "RelativeToolTip": "BusinessLayer\\Extensions\\ServiceExtensions.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-06T07:54:50.842Z",
+              "WhenOpened": "2026-03-06T08:42:47.239Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\WebApi2\\Program.cs",
-              "RelativeDocumentMoniker": "WebApi2\\Program.cs",
-              "ToolTip": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\WebApi2\\Program.cs",
-              "RelativeToolTip": "WebApi2\\Program.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABMAAAA/AAAAAAAAAA==",
+              "Title": "ProductManager.cs",
+              "DocumentMoniker": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\Concrete\\ProductManager.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Concrete\\ProductManager.cs",
+              "ToolTip": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\Concrete\\ProductManager.cs",
+              "RelativeToolTip": "BusinessLayer\\Concrete\\ProductManager.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAcwFUAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-06T07:50:44.7Z",
+              "WhenOpened": "2026-03-06T08:39:01.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RepositoryExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\DataAccessLayer\\Extensions\\RepositoryExtensions.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Extensions\\RepositoryExtensions.cs",
+              "ToolTip": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\DataAccessLayer\\Extensions\\RepositoryExtensions.cs",
+              "RelativeToolTip": "DataAccessLayer\\Extensions\\RepositoryExtensions.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAQwBoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T08:37:00.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUnitofWork.cs",
+              "DocumentMoniker": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\DataAccessLayer\\UnitofWorks\\IUnitofWork.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\UnitofWorks\\IUnitofWork.cs",
+              "ToolTip": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\DataAccessLayer\\UnitofWorks\\IUnitofWork.cs",
+              "RelativeToolTip": "DataAccessLayer\\UnitofWorks\\IUnitofWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T08:35:06.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UnitofWork.cs",
+              "DocumentMoniker": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\DataAccessLayer\\UnitofWorks\\UnitofWork.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\UnitofWorks\\UnitofWork.cs",
+              "ToolTip": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\DataAccessLayer\\UnitofWorks\\UnitofWork.cs",
+              "RelativeToolTip": "DataAccessLayer\\UnitofWorks\\UnitofWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T08:34:52.372Z",
               "EditorCaption": ""
             }
           ]

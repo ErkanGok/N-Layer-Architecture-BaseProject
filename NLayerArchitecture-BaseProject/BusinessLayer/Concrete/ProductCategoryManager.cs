@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
+using DataAccessLayer.UnitofWorks;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -9,18 +10,14 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-	public class ProductCategoryManager : IProductCategoryService
+	public class ProductCategoryManager(IProductCategoryDal productCategoryDal, IUnitofWork unitofWork) : IProductCategoryService
 	{
-		private readonly IProductCategoryDal _productCategoryDal;
-
-		public ProductCategoryManager(IProductCategoryDal productCategoryDal)
-		{
-			_productCategoryDal = productCategoryDal;
-		}
+		private readonly IProductCategoryDal _productCategoryDal = productCategoryDal;
 
 		public async Task DeleteAsync(ProductCategory t)
 		{
 			await _productCategoryDal.DeleteAsync(t);
+			await unitofWork.SaveChangesAsync();
 		}
 
 		public async Task<ProductCategory> GetByIDAsync(int id)
@@ -36,11 +33,13 @@ namespace BusinessLayer.Concrete
 		public async Task InsertAsync(ProductCategory t)
 		{
 			await _productCategoryDal.InsertAsync(t);
+			await unitofWork.SaveChangesAsync();
 		}
 
 		public async Task UpdateAsync(ProductCategory t)
 		{
 			await _productCategoryDal.UpdateAsync(t);
+			await unitofWork.SaveChangesAsync();
 		}
 	}
 }
