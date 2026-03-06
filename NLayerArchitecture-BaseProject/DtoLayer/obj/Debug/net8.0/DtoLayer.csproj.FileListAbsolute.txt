@@ -7,6 +7,7 @@ C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitect
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DtoLayer\obj\Debug\net8.0\DtoLayer.AssemblyInfoInputs.cache
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DtoLayer\obj\Debug\net8.0\DtoLayer.AssemblyInfo.cs
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DtoLayer\obj\Debug\net8.0\DtoLayer.csproj.CoreCompileInputs.cache
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DtoLayer\obj\Debug\net8.0\DtoLayer.sourcelink.json
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DtoLayer\obj\Debug\net8.0\DtoLayer.dll
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DtoLayer\obj\Debug\net8.0\refint\DtoLayer.dll
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DtoLayer\obj\Debug\net8.0\DtoLayer.pdb

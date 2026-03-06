@@ -1,10 +1,15 @@
-﻿using EntityLayer.Concrete;
+﻿using DtoLayer.ProductDto;
+using EntityLayer.Concrete;
 
 namespace BusinessLayer.Abstract
 {
-	public interface IProductService : IGenericService<Product>
+	public interface IProductService 
 	{
-		Task<Product> ProductwithCategoryGetByIDAsync(int id);
-		Task<List<Product>> ProductwithCategoryGetListAsync();
+		Task<GetListProductDto> ProductwithCategoryGetByIDAsync(int id);
+		Task<List<GetListProductDto>> ProductwithCategoryGetListAsync();
+
+		Task AddProductAsync(AddProductDto addProductDto);
+		Task UpdateProductAsync(UpdateProductDto updateProductDto);
+		Task DeleteAsync(int id);
 	}
 }

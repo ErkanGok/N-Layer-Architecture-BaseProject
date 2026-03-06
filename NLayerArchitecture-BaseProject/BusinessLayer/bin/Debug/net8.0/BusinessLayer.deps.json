@@ -9,6 +9,7 @@
       "BusinessLayer/1.0.0": {
         "dependencies": {
           "DataAccessLayer": "1.0.0",
+          "DtoLayer": "1.0.0",
           "EntityLayer": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.24",
           "Microsoft.EntityFrameworkCore.Design": "8.0.24",
@@ -936,6 +937,18 @@
           }
         }
       },
+      "DtoLayer/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.24",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.24"
+        },
+        "runtime": {
+          "DtoLayer.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "EntityLayer/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.24",
@@ -1489,6 +1502,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "DataAccessLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DtoLayer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

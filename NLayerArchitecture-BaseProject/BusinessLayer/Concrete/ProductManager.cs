@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
+using DtoLayer.ProductDto;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -18,39 +19,70 @@ namespace BusinessLayer.Concrete
 			_productDal = productDal;
 		}
 
-		public async Task DeleteAsync(Product t)
+		public async Task AddProductAsync(AddProductDto addProductDto)
 		{
-			await _productDal.DeleteAsync(t);
+			var product = new Product
+			{
+				Name = addProductDto.Name,
+				Price = addProductDto.Price,
+				Quantity = addProductDto.Quantity,
+				ProductCategoryID = addProductDto.ProductCategoryID
+			};
+
+			await _productDal.InsertAsync(product);
 		}
 
-		public async Task<Product> GetByIDAsync(int id)
+		public async Task DeleteAsync(int id)
 		{
-			return await _productDal.GetByIDAsync(id);
+			var value = await _productDal.GetByIDAsync(id);
+
+			if (value != null)
+				await _productDal.DeleteAsync(value);
 		}
 
-		public async Task<List<Product>> GetListAsync()
+		public async Task<GetListProductDto> ProductwithCategoryGetByIDAsync(int id)
 		{
-			return await _productDal.GetListAsync();
+			var value = await _productDal.ProductwithCategoryGetByIDAsync(id);
+
+			if (value == null)
+				return null;
+
+			return new GetListProductDto
+			{
+				ID = value.ID,
+				Name = value.Name,
+				Price = value.Price,
+				Quantity = value.Quantity,
+				CategoryName = value.ProductCategory.Name
+			};
 		}
 
-		public async Task InsertAsync(Product t)
+		public async Task<List<GetListProductDto>> ProductwithCategoryGetListAsync()
 		{
-			await _productDal.InsertAsync(t);
+			var values = await _productDal.ProductwithCategoryGetListAsync();
+
+			return values.Select(x => new GetListProductDto
+			{
+				ID = x.ID,
+				Name = x.Name,
+				Price = x.Price,
+				Quantity = x.Quantity,
+				CategoryName = x.ProductCategory.Name
+			}).ToList();
 		}
 
-		public async Task<Product> ProductwithCategoryGetByIDAsync(int id)
+		public async Task UpdateProductAsync(UpdateProductDto updateProductDto)
 		{
-			return await _productDal.ProductwithCategoryGetByIDAsync(id);
-		}
+			var product = new Product
+			{
+				ID = updateProductDto.ID,
+				Name = updateProductDto.Name,
+				Price = updateProductDto.Price,
+				Quantity = updateProductDto.Quantity,
+				ProductCategoryID = updateProductDto.ProductCategoryID
+			};
 
-		public async Task<List<Product>> ProductwithCategoryGetListAsync()
-		{
-			return await _productDal.ProductwithCategoryGetListAsync();
-		}
-
-		public async Task UpdateAsync(Product t)
-		{
-			await _productDal.UpdateAsync(t);
+			await _productDal.UpdateAsync(product);
 		}
 	}
 }

@@ -1507,6 +1507,20 @@
           "bin/placeholder/DataAccessLayer.dll": {}
         }
       },
+      "DtoLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.24",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.24"
+        },
+        "compile": {
+          "bin/placeholder/DtoLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DtoLayer.dll": {}
+        }
+      },
       "EntityLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -4028,6 +4042,11 @@
       "path": "../DataAccessLayer/DataAccessLayer.csproj",
       "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
     },
+    "DtoLayer/1.0.0": {
+      "type": "project",
+      "path": "../DtoLayer/DtoLayer.csproj",
+      "msbuildProject": "../DtoLayer/DtoLayer.csproj"
+    },
     "EntityLayer/1.0.0": {
       "type": "project",
       "path": "../EntityLayer/EntityLayer.csproj",
@@ -4037,6 +4056,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "DataAccessLayer >= 1.0.0",
+      "DtoLayer >= 1.0.0",
       "EntityLayer >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.24",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.24",
@@ -4078,6 +4098,9 @@
           "projectReferences": {
             "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\DataAccessLayer\\DataAccessLayer.csproj": {
               "projectPath": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\DataAccessLayer\\DataAccessLayer.csproj"
+            },
+            "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\DtoLayer\\DtoLayer.csproj": {
+              "projectPath": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\DtoLayer\\DtoLayer.csproj"
             },
             "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\EntityLayer\\EntityLayer.csproj": {
               "projectPath": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\EntityLayer\\EntityLayer.csproj"

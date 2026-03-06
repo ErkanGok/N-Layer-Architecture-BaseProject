@@ -9,6 +9,7 @@ C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitect
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfoInputs.cache
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfo.cs
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.sourcelink.json
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DataAccessLayer\obj\Debug\net8.0\DataAcce.E67BD773.Up2Date
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.dll
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
