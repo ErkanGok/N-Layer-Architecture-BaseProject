@@ -1,8 +1,10 @@
 using BusinessLayer.Abstract;
 using BusinessLayer.Concrete;
+using BusinessLayer.Extensions;
 using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
+using DataAccessLayer.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,17 +16,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
-#region DbContext
-builder.Services.AddDbContext<Context>();
-#endregion
-
-
-
-// Eðer Product ve ProductCategory için özel repository varsa:
-builder.Services.AddScoped<IProductDal, EfProductDal>();
-builder.Services.AddScoped<IProductService, ProductManager>();
-builder.Services.AddScoped<IProductCategoryDal, EfProductCategoryDal>();
-builder.Services.AddScoped<IProductCategoryService, ProductCategoryManager>();
+//dbcontext eklendi repository extension ile
+builder.Services.AddRepositories(builder.Configuration).AddServices(builder.Configuration);
 
 
 var app = builder.Build();

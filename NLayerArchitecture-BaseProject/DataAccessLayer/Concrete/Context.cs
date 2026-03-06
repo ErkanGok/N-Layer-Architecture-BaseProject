@@ -3,21 +3,22 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DataAccessLayer.Concrete
 {
-	public class Context : DbContext
+	public class Context(DbContextOptions<Context> options) : DbContext(options)
 	{
+		public DbSet<Product> Products { get; set; } = default!;
+		public DbSet<ProductCategory> ProductCategories { get; set; } = default!;
 
-		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-			optionsBuilder.UseSqlServer("server = DESKTOP-USU0VHS\\SQLEXPRESS02; initial catalog = NLayerArchitecture-BaseProject; integrated security = true;TrustServerCertificate=True; ");
-		}
-
-		public DbSet<Product> Products { get; set; }
-		public DbSet<ProductCategory> ProductCategories { get; set; }
+			modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+			base.OnModelCreating(modelBuilder);
+		}		
 
 	}
 }

@@ -7,7 +7,21 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Abstract
 {
-	public interface IProductCategoryService : IGenericService<ProductCategory>
+	public interface IProductCategoryService
 	{
+		public Task DeleteAsync(ProductCategory t);
+
+
+		public Task<ProductCategory> GetByIDAsync(int id);
+
+
+		public Task<List<ProductCategory>> GetListAsync();
+
+
+		public  Task InsertAsync(ProductCategory t);
+
+
+		public  Task UpdateAsync(ProductCategory t);
+		
 	}
 }

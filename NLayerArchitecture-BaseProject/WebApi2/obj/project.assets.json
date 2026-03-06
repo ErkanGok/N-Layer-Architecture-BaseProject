@@ -1597,7 +1597,10 @@
         },
         "runtime": {
           "bin/placeholder/DataAccessLayer.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "DtoLayer/1.0.0": {
         "type": "project",
