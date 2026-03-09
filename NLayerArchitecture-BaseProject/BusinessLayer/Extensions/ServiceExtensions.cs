@@ -5,12 +5,15 @@ using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using DataAccessLayer.Repositories;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -32,6 +35,10 @@ namespace BusinessLayer.Extensions
 			services.AddScoped<IProductService, ProductManager>();
 			services.AddScoped<IProductCategoryService, ProductCategoryManager>();
 			services.AddScoped(typeof(IGenericDal<>), typeof(GenericRepository<>));
+
+			services.AddFluentValidationAutoValidation(); // burası açık olursa asenkron validation çalışmaz, Eğer bunu kaldırırsak Product service'e geçmemiz lazım (3. yol)
+			services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+
 			return services;
 		}
 	}

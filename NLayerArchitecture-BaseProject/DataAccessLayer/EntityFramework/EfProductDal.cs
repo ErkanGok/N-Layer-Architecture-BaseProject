@@ -11,22 +11,20 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.EntityFramework
 {
-	public class EfProductDal : GenericRepository<Product>, IProductDal
+	public class EfProductDal(Context context) : GenericRepository<Product>(context), IProductDal
 	{
-		public EfProductDal(Context context) : base(context)
-		{
-		}
+		
 
 		public async Task<Product> ProductwithCategoryGetByIDAsync(int id)
 		{
-			return await _context.Set<Product>()
+			return await Context.Set<Product>()
 								 .Include(p => p.ProductCategory) // ilişkili kategori
 								 .FirstOrDefaultAsync(p => p.ID == id); // doğru PK
 		}
 
 		public async Task<List<Product>> ProductwithCategoryGetListAsync()
 		{
-			return await _context.Set<Product>()
+			return await Context.Set<Product>()
 						 .Include(p => p.ProductCategory) // tüm ürünleri kategori ile getir
 						 .ToListAsync();
 		}

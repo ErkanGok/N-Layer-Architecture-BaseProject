@@ -4,46 +4,32 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repositories
 {
-	public class GenericRepository<T> : IGenericDal<T> where T : class
+	public class GenericRepository<T>(Context context) : IGenericDal<T> where T : class
 	{
-		protected readonly Context _context;
+		protected Context Context = context;
 
-		public GenericRepository(Context context)
-		{
-			_context = context;
-		}
+		private readonly DbSet<T> _dbset = context.Set<T>();
+		public async ValueTask AddAsync(T entity) => await _dbset.AddAsync(entity);
 
-		public async Task InsertAsync(T t)
-		{
-			await _context.Set<T>().AddAsync(t);
-			await _context.SaveChangesAsync();
-		}
 
-		public async Task DeleteAsync(T t)
-		{
-			_context.Set<T>().Remove(t);
-			await _context.SaveChangesAsync();
-		}
+		public void Delete(T entity) => _dbset.Remove(entity);
 
-		public async Task UpdateAsync(T t)
-		{
-			_context.Set<T>().Update(t);
-			await _context.SaveChangesAsync();
-		}
 
-		public async Task<List<T>> GetListAsync()
-		{
-			return await _context.Set<T>().ToListAsync();
-		}
+		public IQueryable<T> GetAll() => _dbset.AsQueryable().AsNoTracking();
 
-		public async Task<T> GetByIDAsync(int id)
-		{
-			return await _context.Set<T>().FindAsync(id);
-		}
+
+		public ValueTask<T?> GetByIdAsync(int id) => _dbset.FindAsync(id);
+
+
+		public void Update(T entity) => _dbset.Update(entity);
+
+
+		public IQueryable<T> Where(Expression<Func<T, bool>> predicate) => _dbset.Where(predicate).AsNoTracking();
 	}
 }

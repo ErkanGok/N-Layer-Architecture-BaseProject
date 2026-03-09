@@ -153,3 +153,6 @@ C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitect
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\obj\Debug\net8.0\WebApi.pdb
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\obj\Debug\net8.0\WebApi.genruntimeconfig.cache
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\obj\Debug\net8.0\ref\WebApi.dll
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

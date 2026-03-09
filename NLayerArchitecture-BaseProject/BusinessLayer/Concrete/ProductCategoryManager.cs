@@ -2,12 +2,15 @@
 using BusinessLayer.Abstract;
 using BusinessLayer.ProductCategories.Create;
 using BusinessLayer.ProductCategories.Update;
+using BusinessLayer.Products.Create;
 using BusinessLayer.Products.Update;
 using DataAccessLayer.Abstract;
+using DataAccessLayer.EntityFramework;
 using DataAccessLayer.UnitofWorks;
 using DtoLayer.CategoryDto;
 using DtoLayer.ProductDto;
 using EntityLayer.Concrete;
+using Microsoft.EntityFrameworkCore;
 using System.Net;
 
 namespace BusinessLayer.Concrete
@@ -17,21 +20,21 @@ namespace BusinessLayer.Concrete
 
 		public async Task<ServiceResult> DeleteAsync(int id)
 		{
-			var productCategory = await _productCategoryDal.GetByIDAsync(id);
+			var productCategory = await _productCategoryDal.GetByIdAsync(id);
 
 			if (productCategory is null)
 			{
 				return ServiceResult.Fail("Product Not Found", HttpStatusCode.NotFound);
 			}
 
-			await _productCategoryDal.DeleteAsync(productCategory);
+			_productCategoryDal.Delete(productCategory);
 			await unitofWork.SaveChangesAsync();
 			return ServiceResult.Success(HttpStatusCode.NoContent);
 		}
 
 		public async Task<ServiceResult<GetListCategoryDto?>> GetByIDAsync(int id)
 		{
-			var products = await _productCategoryDal.GetByIDAsync(id);
+			var products = await _productCategoryDal.GetByIdAsync(id);
 
 			if (products is null)
 			{
@@ -48,7 +51,7 @@ namespace BusinessLayer.Concrete
 
 		public async Task<ServiceResult<List<GetListCategoryDto>>> GetListAsync()
 		{
-			var values = await _productCategoryDal.GetListAsync(); ;
+			var values = await _productCategoryDal.GetAll().ToListAsync();
 
 			var valuesMap = values.Select(x => new GetListCategoryDto
 			{
@@ -61,18 +64,25 @@ namespace BusinessLayer.Concrete
 
 		public async Task<ServiceResult<CreateProductCategoryResponse>> InsertAsync(CreateProductCategoryRequest request)
 		{
+			var anyProductCategory = await _productCategoryDal.Where(x => x.Name == request.Name).AnyAsync();
+
+			if (anyProductCategory)
+			{
+				return ServiceResult<CreateProductCategoryResponse>.Fail("Kategori İsmi Veritabanında Bulunmaktadır.", HttpStatusCode.BadRequest);
+			}
+
 			var productCategory = new ProductCategory
 			{
 				Name = request.Name				
 			};
-			await _productCategoryDal.InsertAsync(productCategory);
+			await _productCategoryDal.AddAsync(productCategory);
 			await unitofWork.SaveChangesAsync();
 			return ServiceResult<CreateProductCategoryResponse>.SuccessAsCreated(new CreateProductCategoryResponse(productCategory.ID), $"api/products/{productCategory.ID}");
 		}
 
 		public async Task<ServiceResult> UpdateAsync(int id, UpdateProductCategoryRequest request)
 		{
-			var productCategory = await _productCategoryDal.GetByIDAsync(id);
+			var productCategory = await _productCategoryDal.GetByIdAsync(id);
 
 			if (productCategory is null)
 			{
@@ -81,7 +91,7 @@ namespace BusinessLayer.Concrete
 
 			productCategory.Name = request.Name;
 
-			await _productCategoryDal.UpdateAsync(productCategory);
+			_productCategoryDal.Update(productCategory);
 			await unitofWork.SaveChangesAsync();
 
 			return ServiceResult.Success(HttpStatusCode.NoContent);
