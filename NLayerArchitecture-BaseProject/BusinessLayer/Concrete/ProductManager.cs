@@ -1,6 +1,7 @@
 ﻿using App.Services;
 using AutoMapper;
 using BusinessLayer.Abstract;
+using BusinessLayer.ExceptionHandlers;
 using BusinessLayer.Products.Create;
 using BusinessLayer.Products.Update;
 using DataAccessLayer.Abstract;
@@ -16,6 +17,9 @@ namespace BusinessLayer.Concrete
 	{
 		public async Task<ServiceResult<CreateProductResponse>> InsertAsync(CreateProductRequest request)
 		{
+			//throw new CriticalException("Kritik Seviyede Bir Hata Meydana Geldi.");
+			//throw new Exception("db hatası");
+
 			var anyProduct = await _productDal.Where(x => x.Name == request.Name).AnyAsync();
 
 			if (anyProduct)

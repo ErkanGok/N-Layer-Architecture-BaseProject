@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{408EBE74-DF10-40DC-ABE8-F37917781450}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\erkan\\documents\\github\\n-layer-architecture-baseproject\\nlayerarchitecture-baseproject\\businesslayer\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{408EBE74-DF10-40DC-ABE8-F37917781450}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{408EBE74-DF10-40DC-ABE8-F37917781450}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\erkan\\documents\\github\\n-layer-architecture-baseproject\\nlayerarchitecture-baseproject\\businesslayer\\concrete\\productcategorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{408EBE74-DF10-40DC-ABE8-F37917781450}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\concrete\\productcategorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{408EBE74-DF10-40DC-ABE8-F37917781450}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\erkan\\documents\\github\\n-layer-architecture-baseproject\\nlayerarchitecture-baseproject\\businesslayer\\concrete\\productmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{408EBE74-DF10-40DC-ABE8-F37917781450}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\concrete\\productmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{408EBE74-DF10-40DC-ABE8-F37917781450}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\erkan\\documents\\github\\n-layer-architecture-baseproject\\nlayerarchitecture-baseproject\\businesslayer\\exceptionhandlers\\criticalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{408EBE74-DF10-40DC-ABE8-F37917781450}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\exceptionhandlers\\criticalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{408EBE74-DF10-40DC-ABE8-F37917781450}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\erkan\\documents\\github\\n-layer-architecture-baseproject\\nlayerarchitecture-baseproject\\businesslayer\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{408EBE74-DF10-40DC-ABE8-F37917781450}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{408EBE74-DF10-40DC-ABE8-F37917781450}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\erkan\\documents\\github\\n-layer-architecture-baseproject\\nlayerarchitecture-baseproject\\businesslayer\\exceptionhandlers\\criticalexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{408EBE74-DF10-40DC-ABE8-F37917781450}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\exceptionhandlers\\criticalexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2F377B5-B4A5-436D-96C3-521F645C980D}|WebApi2\\WebApi.csproj|c:\\users\\erkan\\documents\\github\\n-layer-architecture-baseproject\\nlayerarchitecture-baseproject\\webapi2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2F377B5-B4A5-436D-96C3-521F645C980D}|WebApi2\\WebApi.csproj|solutionrelative:webapi2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{408EBE74-DF10-40DC-ABE8-F37917781450}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\erkan\\documents\\github\\n-layer-architecture-baseproject\\nlayerarchitecture-baseproject\\businesslayer\\exceptionhandlers\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{408EBE74-DF10-40DC-ABE8-F37917781450}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\exceptionhandlers\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 239,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductCategoryManager.cs",
-              "DocumentMoniker": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\Concrete\\ProductCategoryManager.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Concrete\\ProductCategoryManager.cs",
-              "ToolTip": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\Concrete\\ProductCategoryManager.cs",
-              "RelativeToolTip": "BusinessLayer\\Concrete\\ProductCategoryManager.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAowDsAAAAAAAAAAAAAAA==",
+              "Title": "CriticalExceptionHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\ExceptionHandlers\\CriticalExceptionHandler.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\ExceptionHandlers\\CriticalExceptionHandler.cs",
+              "ToolTip": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\ExceptionHandlers\\CriticalExceptionHandler.cs",
+              "RelativeToolTip": "BusinessLayer\\ExceptionHandlers\\CriticalExceptionHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T14:52:25.45Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\WebApi2\\Program.cs",
-              "RelativeDocumentMoniker": "WebApi2\\Program.cs",
-              "ToolTip": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\WebApi2\\Program.cs",
-              "RelativeToolTip": "WebApi2\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T14:50:51.77Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ServiceExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\Extensions\\ServiceExtensions.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Extensions\\ServiceExtensions.cs",
-              "ToolTip": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\Extensions\\ServiceExtensions.cs",
-              "RelativeToolTip": "BusinessLayer\\Extensions\\ServiceExtensions.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwCoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T14:50:30.052Z",
+              "WhenOpened": "2026-03-09T15:05:40.574Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductManager.cs",
-              "DocumentMoniker": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\Concrete\\ProductManager.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Concrete\\ProductManager.cs",
-              "ToolTip": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\Concrete\\ProductManager.cs",
-              "RelativeToolTip": "BusinessLayer\\Concrete\\ProductManager.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAxwA4AAABMAAAAAAAAAA==",
+              "Title": "CriticalException.cs",
+              "DocumentMoniker": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\ExceptionHandlers\\CriticalException.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\ExceptionHandlers\\CriticalException.cs",
+              "ToolTip": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\ExceptionHandlers\\CriticalException.cs",
+              "RelativeToolTip": "BusinessLayer\\ExceptionHandlers\\CriticalException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T14:44:51.703Z",
+              "WhenOpened": "2026-03-09T15:05:24.849Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MappingProfile.cs",
-              "DocumentMoniker": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\Mapping\\MappingProfile.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Mapping\\MappingProfile.cs",
-              "ToolTip": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\Mapping\\MappingProfile.cs",
-              "RelativeToolTip": "BusinessLayer\\Mapping\\MappingProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Title": "GlobalExceptionHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\ExceptionHandlers\\GlobalExceptionHandler.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\ExceptionHandlers\\GlobalExceptionHandler.cs",
+              "ToolTip": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\ExceptionHandlers\\GlobalExceptionHandler.cs",
+              "RelativeToolTip": "BusinessLayer\\ExceptionHandlers\\GlobalExceptionHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T14:43:48.254Z",
+              "WhenOpened": "2026-03-09T15:05:55.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductCategoryManager.cs",
+              "DocumentMoniker": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\Concrete\\ProductCategoryManager.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Concrete\\ProductCategoryManager.cs",
+              "ToolTip": "C:\\Users\\Erkan\\Documents\\GitHub\\N-Layer-Architecture-BaseProject\\NLayerArchitecture-BaseProject\\BusinessLayer\\Concrete\\ProductCategoryManager.cs",
+              "RelativeToolTip": "BusinessLayer\\Concrete\\ProductCategoryManager.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAwwEkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T14:52:25.45Z",
               "EditorCaption": ""
             }
           ]

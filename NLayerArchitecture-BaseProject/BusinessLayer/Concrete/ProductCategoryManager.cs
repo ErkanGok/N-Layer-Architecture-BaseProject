@@ -1,6 +1,7 @@
 ﻿using App.Services;
 using AutoMapper;
 using BusinessLayer.Abstract;
+using BusinessLayer.ExceptionHandlers;
 using BusinessLayer.ProductCategories.Create;
 using BusinessLayer.ProductCategories.Update;
 using BusinessLayer.Products.Create;
@@ -70,6 +71,9 @@ namespace BusinessLayer.Concrete
 
 		public async Task<ServiceResult<CreateProductCategoryResponse>> InsertAsync(CreateProductCategoryRequest request)
 		{
+			//throw new CriticalException("Kritik Seviyede Bir Hata Meydana Geldi.");
+			//throw new Exception("db hatası");
+
 			var anyProductCategory = await _productCategoryDal.Where(x => x.Name == request.Name).AnyAsync();
 
 			if (anyProductCategory)

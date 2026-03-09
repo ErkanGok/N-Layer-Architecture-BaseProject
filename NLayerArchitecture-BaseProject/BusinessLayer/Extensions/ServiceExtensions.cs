@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Abstract;
 using BusinessLayer.Concrete;
+using BusinessLayer.ExceptionHandlers;
 using DataAccessLayer;
 using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
@@ -40,6 +41,10 @@ namespace BusinessLayer.Extensions
 			services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
 			services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
+			//Exceptionhandlers eklediğimiz sıra önemli
+			services.AddExceptionHandler<CriticalExceptionHandler>();
+			services.AddExceptionHandler<GlobalExceptionHandler>();
 
 			return services;
 		}
