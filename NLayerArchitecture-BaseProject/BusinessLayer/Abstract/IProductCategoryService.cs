@@ -19,10 +19,10 @@ namespace BusinessLayer.Abstract
 		 Task<ServiceResult> DeleteAsync(int id);
 
 
-		 Task<ServiceResult<GetListCategoryDto?>> GetByIDAsync(int id);
+		 Task<ServiceResult<ProductCategoryDto?>> GetByIDAsync(int id);
 
 
-		 Task<ServiceResult<List<GetListCategoryDto>>> GetListAsync();
+		 Task<ServiceResult<List<ProductCategoryDto>>> GetListAsync();
 
 
 		Task<ServiceResult<CreateProductCategoryResponse>> InsertAsync(CreateProductCategoryRequest request);

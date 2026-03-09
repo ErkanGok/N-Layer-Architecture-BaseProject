@@ -6,8 +6,12 @@ C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitect
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\bin\Debug\net8.0\WebApi.runtimeconfig.json
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\bin\Debug\net8.0\WebApi.dll
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\bin\Debug\net8.0\WebApi.pdb
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\bin\Debug\net8.0\Humanizer.dll
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
@@ -153,6 +157,3 @@ C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitect
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\obj\Debug\net8.0\WebApi.pdb
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\obj\Debug\net8.0\WebApi.genruntimeconfig.cache
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\obj\Debug\net8.0\ref\WebApi.dll
-C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\bin\Debug\net8.0\FluentValidation.dll
-C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
-C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\WebApi2\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

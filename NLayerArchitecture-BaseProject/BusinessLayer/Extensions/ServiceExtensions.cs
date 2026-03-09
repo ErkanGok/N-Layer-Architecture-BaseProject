@@ -39,6 +39,8 @@ namespace BusinessLayer.Extensions
 			services.AddFluentValidationAutoValidation(); // burası açık olursa asenkron validation çalışmaz, Eğer bunu kaldırırsak Product service'e geçmemiz lazım (3. yol)
 			services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
+			services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
 			return services;
 		}
 	}

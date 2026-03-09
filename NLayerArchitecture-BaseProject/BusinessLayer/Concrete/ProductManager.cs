@@ -1,4 +1,5 @@
 ﻿using App.Services;
+using AutoMapper;
 using BusinessLayer.Abstract;
 using BusinessLayer.Products.Create;
 using BusinessLayer.Products.Update;
@@ -11,10 +12,8 @@ using System.Net;
 
 namespace BusinessLayer.Concrete
 {
-	public class ProductManager(IProductDal _productDal, IUnitofWork unitofWork) : IProductService
+	public class ProductManager(IProductDal _productDal, IUnitofWork unitofWork, IMapper mapper) : IProductService
 	{
-		
-
 		public async Task<ServiceResult<CreateProductResponse>> InsertAsync(CreateProductRequest request)
 		{
 			var anyProduct = await _productDal.Where(x => x.Name == request.Name).AnyAsync();
@@ -59,32 +58,38 @@ namespace BusinessLayer.Concrete
 			{
 				return ServiceResult<ProductDto?>.Fail("Product Not Found", HttpStatusCode.NotFound);
 			}
-			var productsAsDto = new ProductDto
-			{
-				ID = products.ID,
-				Name = products.Name,
-				Price = products.Price,
-				Quantity = products.Quantity,
-				CategoryName = products.ProductCategory.Name
-			};
+			var productsMap = mapper.Map<ProductDto>(products);
+			#region Manuel Mapping
+			//var productsAsDto = new ProductDto
+			//{
+			//	ID = products.ID,
+			//	Name = products.Name,
+			//	Price = products.Price,
+			//	Quantity = products.Quantity,
+			//	CategoryName = products.ProductCategory.Name
+			//};
+			#endregion
 
-			return ServiceResult<ProductDto>.Success(productsAsDto)!;
+
+			return ServiceResult<ProductDto>.Success(productsMap)!;
 		}
 
 		public async Task<ServiceResult<List<ProductDto>>> GetListAsync()
 		{
-			var values = await _productDal.ProductwithCategoryGetListAsync();
+			var products = await _productDal.ProductwithCategoryGetListAsync();
+			var productsMap = mapper.Map<List<ProductDto>>(products);
+			#region Manuel Map
+			//var valuesMap = values.Select(x => new ProductDto
+			//{
+			//	ID = x.ID,
+			//	Name = x.Name,
+			//	Price = x.Price,
+			//	Quantity = x.Quantity,
+			//	CategoryName = x.ProductCategory.Name
+			//}).ToList();
+			#endregion
 
-			var valuesMap = values.Select(x => new ProductDto
-			{
-				ID = x.ID,
-				Name = x.Name,
-				Price = x.Price,
-				Quantity = x.Quantity,
-				CategoryName = x.ProductCategory.Name
-			}).ToList();
-
-			return ServiceResult<List<ProductDto>>.Success(valuesMap);
+			return ServiceResult<List<ProductDto>>.Success(productsMap);
 
 		}
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DtoLayer.CategoryDto
 {
-	public class GetListCategoryDto
+	public class ProductCategoryDto
 	{
 		public int ID { get; set; }
 		public string Name { get; set; }

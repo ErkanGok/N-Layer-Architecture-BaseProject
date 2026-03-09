@@ -1,4 +1,5 @@
 ﻿using App.Services;
+using AutoMapper;
 using BusinessLayer.Abstract;
 using BusinessLayer.ProductCategories.Create;
 using BusinessLayer.ProductCategories.Update;
@@ -15,7 +16,7 @@ using System.Net;
 
 namespace BusinessLayer.Concrete
 {
-	public class ProductCategoryManager(IProductCategoryDal _productCategoryDal, IUnitofWork unitofWork) : IProductCategoryService
+	public class ProductCategoryManager(IProductCategoryDal _productCategoryDal, IUnitofWork unitofWork, IMapper mapper) : IProductCategoryService
 	{	
 
 		public async Task<ServiceResult> DeleteAsync(int id)
@@ -32,34 +33,39 @@ namespace BusinessLayer.Concrete
 			return ServiceResult.Success(HttpStatusCode.NoContent);
 		}
 
-		public async Task<ServiceResult<GetListCategoryDto?>> GetByIDAsync(int id)
+		public async Task<ServiceResult<ProductCategoryDto?>> GetByIDAsync(int id)
 		{
 			var products = await _productCategoryDal.GetByIdAsync(id);
 
 			if (products is null)
 			{
-				return ServiceResult<GetListCategoryDto?>.Fail("Product Not Found", HttpStatusCode.NotFound);
+				return ServiceResult<ProductCategoryDto?>.Fail("Product Not Found", HttpStatusCode.NotFound);
 			}
-			var productsAsDto = new GetListCategoryDto
-			{
-				ID = products.ID,
-				Name = products.Name,				
-			};
+			var productsAsDto = mapper.Map<ProductCategoryDto>(products);
+			#region ManuelMapping
+			//var productsAsDto = new ProductCategoryDto
+			//{
+			//	ID = products.ID,
+			//	Name = products.Name,				
+			//};
+			#endregion
 
-			return ServiceResult<GetListCategoryDto>.Success(productsAsDto)!;
+			return ServiceResult<ProductCategoryDto>.Success(productsAsDto)!;
 		}
 
-		public async Task<ServiceResult<List<GetListCategoryDto>>> GetListAsync()
+		public async Task<ServiceResult<List<ProductCategoryDto>>> GetListAsync()
 		{
 			var values = await _productCategoryDal.GetAll().ToListAsync();
+			var valuesMap = mapper.Map<List<ProductCategoryDto>>(values);
 
-			var valuesMap = values.Select(x => new GetListCategoryDto
-			{
-				ID = x.ID,
-				Name = x.Name			
-			}).ToList();
-
-			return ServiceResult<List<GetListCategoryDto>>.Success(valuesMap);
+			#region ManuelMapping
+			//var valuesMap = values.Select(x => new ProductCategoryDto
+			//{
+			//	ID = x.ID,
+			//	Name = x.Name			
+			//}).ToList();
+			#endregion
+			return ServiceResult<List<ProductCategoryDto>>.Success(valuesMap);
 		}
 
 		public async Task<ServiceResult<CreateProductCategoryResponse>> InsertAsync(CreateProductCategoryRequest request)

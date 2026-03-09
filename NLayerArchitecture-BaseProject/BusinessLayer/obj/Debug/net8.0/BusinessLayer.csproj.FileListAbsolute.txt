@@ -1,5 +1,4 @@
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\BusinessLayer\bin\Debug\net8.0\BusinessLayer.deps.json
-C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\BusinessLayer\bin\Debug\net8.0\BusinessLayer.runtimeconfig.json
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\BusinessLayer\bin\Debug\net8.0\BusinessLayer.dll
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\BusinessLayer\bin\Debug\net8.0\BusinessLayer.pdb
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\BusinessLayer\bin\Debug\net8.0\DataAccessLayer.dll
@@ -18,5 +17,4 @@ C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitect
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\BusinessLayer\obj\Debug\net8.0\BusinessLayer.dll
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\BusinessLayer\obj\Debug\net8.0\refint\BusinessLayer.dll
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\BusinessLayer\obj\Debug\net8.0\BusinessLayer.pdb
-C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\BusinessLayer\obj\Debug\net8.0\BusinessLayer.genruntimeconfig.cache
 C:\Users\Erkan\Documents\GitHub\N-Layer-Architecture-BaseProject\NLayerArchitecture-BaseProject\BusinessLayer\obj\Debug\net8.0\ref\BusinessLayer.dll
