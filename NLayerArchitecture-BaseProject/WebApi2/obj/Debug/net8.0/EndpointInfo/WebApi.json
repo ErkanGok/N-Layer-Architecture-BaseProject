@@ -26,17 +26,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/AddProductDto"
+                "$ref": "#/components/schemas/CreateProductRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/AddProductDto"
+                "$ref": "#/components/schemas/CreateProductRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/AddProductDto"
+                "$ref": "#/components/schemas/CreateProductRequest"
               }
             }
           }
@@ -53,21 +53,31 @@
         "tags": [
           "Product"
         ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateProductDto"
+                "$ref": "#/components/schemas/UpdateProductRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateProductDto"
+                "$ref": "#/components/schemas/UpdateProductRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateProductDto"
+                "$ref": "#/components/schemas/UpdateProductRequest"
               }
             }
           }
@@ -144,17 +154,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/AddCategoryDto"
+                "$ref": "#/components/schemas/CreateProductCategoryRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/AddCategoryDto"
+                "$ref": "#/components/schemas/CreateProductCategoryRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/AddCategoryDto"
+                "$ref": "#/components/schemas/CreateProductCategoryRequest"
               }
             }
           }
@@ -215,21 +225,31 @@
         "tags": [
           "ProductCategory"
         ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateCategoryDto"
+                "$ref": "#/components/schemas/UpdateProductCategoryRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateCategoryDto"
+                "$ref": "#/components/schemas/UpdateProductCategoryRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateCategoryDto"
+                "$ref": "#/components/schemas/UpdateProductCategoryRequest"
               }
             }
           }
@@ -283,7 +303,7 @@
   },
   "components": {
     "schemas": {
-      "AddCategoryDto": {
+      "CreateProductCategoryRequest": {
         "type": "object",
         "properties": {
           "name": {
@@ -293,7 +313,7 @@
         },
         "additionalProperties": false
       },
-      "AddProductDto": {
+      "CreateProductRequest": {
         "type": "object",
         "properties": {
           "name": {
@@ -316,13 +336,9 @@
         },
         "additionalProperties": false
       },
-      "UpdateCategoryDto": {
+      "UpdateProductCategoryRequest": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "name": {
             "type": "string",
             "nullable": true
@@ -330,13 +346,9 @@
         },
         "additionalProperties": false
       },
-      "UpdateProductDto": {
+      "UpdateProductRequest": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "name": {
             "type": "string",
             "nullable": true

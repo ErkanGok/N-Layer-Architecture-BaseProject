@@ -1,15 +1,19 @@
-﻿using DtoLayer.ProductDto;
+﻿using App.Services;
+using BusinessLayer.Products.Create;
+using BusinessLayer.Products.Update;
+using DtoLayer.CategoryDto;
+using DtoLayer.ProductDto;
 using EntityLayer.Concrete;
 
 namespace BusinessLayer.Abstract
 {
 	public interface IProductService 
 	{
-		Task<GetListProductDto> ProductwithCategoryGetByIDAsync(int id);
-		Task<List<GetListProductDto>> ProductwithCategoryGetListAsync();
+		Task<ServiceResult<ProductDto?>> GetByIDAsync(int id);
+		Task<ServiceResult<List<ProductDto>>> GetListAsync();
 
-		Task AddProductAsync(AddProductDto addProductDto);
-		Task UpdateProductAsync(UpdateProductDto updateProductDto);
-		Task DeleteAsync(int id);
+		Task<ServiceResult<CreateProductResponse>> InsertAsync(CreateProductRequest request);
+		Task<ServiceResult> UpdateAsync(int id, UpdateProductRequest request);
+		Task<ServiceResult> DeleteAsync(int id);
 	}
 }

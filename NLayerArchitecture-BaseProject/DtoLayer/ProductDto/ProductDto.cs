@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DtoLayer.ProductDto
 {
-	public class GetListProductDto
+	public class ProductDto
 	{
 		public int ID { get; set; }
 		public string Name { get; set; }

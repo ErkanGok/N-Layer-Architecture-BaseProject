@@ -1,67 +1,73 @@
-﻿using BusinessLayer.Abstract;
+﻿using App.Services;
+using BusinessLayer.Abstract;
+using BusinessLayer.Products.Create;
+using BusinessLayer.Products.Update;
 using DataAccessLayer.Abstract;
 using DataAccessLayer.UnitofWorks;
 using DtoLayer.ProductDto;
 using EntityLayer.Concrete;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net;
 
 namespace BusinessLayer.Concrete
 {
-	public class ProductManager(IProductDal productDal, IUnitofWork unitofWork) : IProductService
+	public class ProductManager(IProductDal _productDal, IUnitofWork unitofWork) : IProductService
 	{
-		private readonly IProductDal _productDal = productDal;
+		
 
-		public async Task AddProductAsync(AddProductDto addProductDto)
+		public async Task<ServiceResult<CreateProductResponse>> InsertAsync(CreateProductRequest request)
 		{
 			var product = new Product
 			{
-				Name = addProductDto.Name,
-				Price = addProductDto.Price,
-				Quantity = addProductDto.Quantity,
-				ProductCategoryID = addProductDto.ProductCategoryID
+				Name = request.Name,
+				Price = request.Price,
+				Quantity = request.Quantity,
+				ProductCategoryID = request.ProductCategoryID
 			};
 
 			await _productDal.InsertAsync(product);
 			await unitofWork.SaveChangesAsync();
+			return ServiceResult<CreateProductResponse>.SuccessAsCreated(new CreateProductResponse(product.ID), $"api/products/{product.ID}");
 		}
 
-		public async Task DeleteAsync(int id)
+		public async Task<ServiceResult> DeleteAsync(int id)
 		{
-			var value = await _productDal.GetByIDAsync(id);
+			var product = await _productDal.GetByIDAsync(id);
 
-			if (value != null)
+			if (product is null)
 			{
-				await _productDal.DeleteAsync(value);
-				await unitofWork.SaveChangesAsync();
+				return ServiceResult.Fail("Product Not Found", HttpStatusCode.NotFound);
 			}
+
+			await _productDal.DeleteAsync(product);
+			await unitofWork.SaveChangesAsync();
+			return ServiceResult.Success(HttpStatusCode.NoContent);
 		}
 
-		public async Task<GetListProductDto> ProductwithCategoryGetByIDAsync(int id)
+		public async Task<ServiceResult<ProductDto?>> GetByIDAsync(int id)
 		{
-			var value = await _productDal.ProductwithCategoryGetByIDAsync(id);
+			var products = await _productDal.ProductwithCategoryGetByIDAsync(id);
 
-			if (value == null)
-				return null;
-
-			return new GetListProductDto
+			if (products is null)
 			{
-				ID = value.ID,
-				Name = value.Name,
-				Price = value.Price,
-				Quantity = value.Quantity,
-				CategoryName = value.ProductCategory.Name
+				return ServiceResult<ProductDto?>.Fail("Product Not Found", HttpStatusCode.NotFound);
+			}
+			var productsAsDto = new ProductDto
+			{
+				ID = products.ID,
+				Name = products.Name,
+				Price = products.Price,
+				Quantity = products.Quantity,
+				CategoryName = products.ProductCategory.Name
 			};
+
+			return ServiceResult<ProductDto>.Success(productsAsDto)!;
 		}
 
-		public async Task<List<GetListProductDto>> ProductwithCategoryGetListAsync()
+		public async Task<ServiceResult<List<ProductDto>>> GetListAsync()
 		{
 			var values = await _productDal.ProductwithCategoryGetListAsync();
 
-			return values.Select(x => new GetListProductDto
+			var valuesMap = values.Select(x => new ProductDto
 			{
 				ID = x.ID,
 				Name = x.Name,
@@ -69,21 +75,32 @@ namespace BusinessLayer.Concrete
 				Quantity = x.Quantity,
 				CategoryName = x.ProductCategory.Name
 			}).ToList();
+
+			return ServiceResult<List<ProductDto>>.Success(valuesMap);
+
 		}
 
-		public async Task UpdateProductAsync(UpdateProductDto updateProductDto)
+		public async Task<ServiceResult> UpdateAsync(int id, UpdateProductRequest request)
 		{
-			var product = new Product
+			var product = await _productDal.GetByIDAsync(id);
+
+			if (product is null)
 			{
-				ID = updateProductDto.ID,
-				Name = updateProductDto.Name,
-				Price = updateProductDto.Price,
-				Quantity = updateProductDto.Quantity,
-				ProductCategoryID = updateProductDto.ProductCategoryID
-			};
+				return ServiceResult.Fail("Product Not Found", HttpStatusCode.NotFound);
+			}
+
+			product.Name = request.Name;
+			product.Price = request.Price;
+			product.Quantity = request.Quantity;
+			product.ProductCategoryID = request.ProductCategoryID;
+
 
 			await _productDal.UpdateAsync(product);
 			await unitofWork.SaveChangesAsync();
+
+			return ServiceResult.Success(HttpStatusCode.NoContent);
 		}
+
+		
 	}
 }

@@ -40,8 +40,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "DtoLayer.ProductDto.AddProductDto",
+        "Name": "request",
+        "Type": "BusinessLayer.Products.Create.CreateProductRequest",
         "IsRequired": true
       }
     ],
@@ -66,8 +66,13 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "DtoLayer.ProductDto.UpdateProductDto",
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "request",
+        "Type": "BusinessLayer.Products.Update.UpdateProductRequest",
         "IsRequired": true
       }
     ],
@@ -114,8 +119,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "addCategoryDto",
-        "Type": "DtoLayer.CategoryDto.AddCategoryDto",
+        "Name": "request",
+        "Type": "BusinessLayer.ProductCategories.Create.CreateProductCategoryRequest",
         "IsRequired": true
       }
     ],
@@ -123,7 +128,7 @@
   },
   {
     "ContainingType": "WebApi.Controllers.ProductCategoryController",
-    "Method": "GetListProduct",
+    "Method": "GetListProductCategory",
     "RelativePath": "api/ProductCategory/GetListProductCategory",
     "HttpMethod": "GET",
     "IsController": true,
@@ -140,8 +145,13 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "productUpdateDto",
-        "Type": "DtoLayer.CategoryDto.UpdateCategoryDto",
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "request",
+        "Type": "BusinessLayer.ProductCategories.Update.UpdateProductCategoryRequest",
         "IsRequired": true
       }
     ],

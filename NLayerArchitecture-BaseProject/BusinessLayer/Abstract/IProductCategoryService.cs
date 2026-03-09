@@ -1,4 +1,11 @@
-﻿using EntityLayer.Concrete;
+﻿using App.Services;
+using BusinessLayer.ProductCategories.Create;
+using BusinessLayer.ProductCategories.Update;
+using BusinessLayer.Products.Create;
+using BusinessLayer.Products.Update;
+using DtoLayer.CategoryDto;
+using DtoLayer.ProductDto;
+using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,19 +16,19 @@ namespace BusinessLayer.Abstract
 {
 	public interface IProductCategoryService
 	{
-		public Task DeleteAsync(ProductCategory t);
+		 Task<ServiceResult> DeleteAsync(int id);
 
 
-		public Task<ProductCategory> GetByIDAsync(int id);
+		 Task<ServiceResult<GetListCategoryDto?>> GetByIDAsync(int id);
 
 
-		public Task<List<ProductCategory>> GetListAsync();
+		 Task<ServiceResult<List<GetListCategoryDto>>> GetListAsync();
 
 
-		public  Task InsertAsync(ProductCategory t);
+		Task<ServiceResult<CreateProductCategoryResponse>> InsertAsync(CreateProductCategoryRequest request);
 
 
-		public  Task UpdateAsync(ProductCategory t);
+		Task<ServiceResult> UpdateAsync(int id, UpdateProductCategoryRequest request);
 		
 	}
 }
